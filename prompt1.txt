@@ -1,0 +1,41 @@
+Altere o código com as seguintes modificações
+
+No menu Home a informação deverá ser:
+
+Design Experimental & Artesanato
+
+Arquitetura aplicada ao corpo.
+Peças construídas, não decoradas.
+Cada forma ocupa um espaço. Cada linha tem função. 
+
+Incluir a foto anexada com nome home como plano de fundo.
+
+No menu Sobre a informação deverá ser:
+
+Laboratório de design focado em estrutura e função.
+
+IZI LABORATORY explora a interseção entre design, arquitetura e função. Cada peça é um experimento — uma pergunta sobre como forma, material e corpo se relacionam.
+
+No menu Conceito a frase deverá ser:
+
+O corpo como estrutura.
+A joia como extensão.
+Não seguimos tendência. Trabalhamos com matéria e equilíbrio.
+
+Colocar a foto anexada conceito como plano de fundo
+
+Excluir o menu Manifesto.
+
+Alterar o menu protótipos para Processo
+Incluir a imagem processo material com a frase abaixo da imagem: Não criamos peças finais.
+Criamos pontos de partida.
+Incluir a imagem processo material1 com a frase abaixo da imagem:A forma questiona.
+O material resiste.
+Incluir a imagem processo desfocado com a frase abaixo da imagem:Aqui, perfeição é morte.
+Evolução é vida.
+
+Alterar o menu Peças para Experimentos e incluir nos quadrados em escala de cinza incluir as imagens (anel lança, anel trabalhado em cima da pedra, Argolas no quadrado,corpo e joia, conjunto buzios, variante do anel, anel base riscada,aneis na pedra, anel topo quadrado, anel base riscada2,aneis lisos, anel com espaço para brasão) com cor conforme imagens sem edição, e abaixo da imagem colocar os LOTES, LOTE 01, LOTE 02, LOTE 03, e assim por diante, repetindo o mesmo lote para as imagens variante do anel e aneis com espaço para brasão. E outro loto deve se repetir nas imagens aneis na pedra e Argolas no quadrado.
+
+O menu Experimentos existente atualmente no código deve ser excluído.
+
+No menu contato acrescentar o link para conversa no whastApp: wa.me/351931431125

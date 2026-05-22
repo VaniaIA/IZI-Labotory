@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IZI LABORATORY</title>
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .font-mono-brand {
+      font-family: 'Space Mono', monospace;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #fff;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #555;
+    }
+  </style>
+</head>
+
+<body class="h-full bg-black text-white">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-12 py-5"
+    style="background: rgba(0,0,0,0.85); backdrop-filter: blur(12px);">
+
+    <div class="font-mono-brand text-sm tracking-widest font-bold">
+      IZI LABORATORY
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <div class="hidden md:flex items-center gap-8 font-mono-brand text-xs tracking-wider uppercase">
+
+      <a href="#home" class="nav-link text-zinc-400">Home</a>
+
+      <a href="#about" class="nav-link text-zinc-400">Sobre</a>
+
+      <a href="#conceito" class="nav-link text-zinc-400">Conceito</a>
+
+      <a href="#processo" class="nav-link text-zinc-400">Processo</a>
+
+      <a href="#experimentos" class="nav-link text-zinc-400">Experimentos</a>
+
+      <a href="#contato" class="nav-link text-zinc-400">Contato</a>
+
+    </div>
+
+    <!-- BOTÃO MOBILE -->
+    <button id="menu-toggle" class="md:hidden text-white">
+      <i data-lucide="menu" style="width:20px;height:20px;"></i>
+    </button>
+
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div id="mobile-menu"
+    class="fixed inset-0 z-40 hidden flex-col items-center justify-center gap-8 bg-black font-mono-brand text-lg tracking-wider uppercase">
+
+    <button id="menu-close" class="absolute top-5 right-6 text-white">
+      <i data-lucide="x" style="width:24px;height:24px;"></i>
+    </button>
+
+    <a href="#home" class="mobile-link text-zinc-400">Home</a>
+
+    <a href="#about" class="mobile-link text-zinc-400">Sobre</a>
+
+    <a href="#conceito" class="mobile-link text-zinc-400">Conceito</a>
+
+    <a href="#processo" class="mobile-link text-zinc-400">Processo</a>
+
+    <a href="#experimentos" class="mobile-link text-zinc-400">Experimentos</a>
+
+    <a href="#contato" class="mobile-link text-zinc-400">Contato</a>
+
+  </div>
+
+  <!-- HERO -->
+  <section id="home"
+    class="min-h-screen flex items-center justify-center text-center px-6 relative"
+    style="background:url('home.jpeg') center/cover no-repeat;">
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 max-w-4xl">
+
+      <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-wide">
+        Design Experimental & Artesanato
+      </h1>
+
+      <p class="text-xl md:text-2xl leading-relaxed text-zinc-300">
+        Arquitetura aplicada ao corpo.<br>
+        Experimentos construídas, não decoradas.<br>
+        Cada forma ocupa um espaço. Cada linha tem função.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="about" class="py-32 px-6 md:px-20 bg-black text-white">
+
+    <div class="max-w-4xl mx-auto">
+
+      <h2 class="text-4xl mb-10 uppercase tracking-[0.3em]">
+        Sobre
+      </h2>
+
+      <p class="text-2xl mb-8 text-zinc-200">
+        Laboratório de design focado em estrutura e função.
+      </p>
+
+      <p class="text-lg leading-relaxed text-zinc-400">
+        IZI LABORATORY explora a interseção entre design, arquitetura e função.
+        Cada peça é um experimento — uma pergunta sobre como forma, material e corpo se relacionam.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONCEITO -->
+  <section id="conceito"
+    class="py-32 px-6 md:px-20 text-white relative"
+    style="background:url('conceito.jpeg') center/cover no-repeat;">
+
+    <div class="absolute inset-0 bg-black/75"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto">
+
+      <h2 class="text-4xl mb-10 uppercase tracking-[0.3em]">
+        Conceito
+      </h2>
+
+      <p class="text-2xl leading-relaxed">
+        O corpo como estrutura.<br>
+        A joia como extensão.<br>
+        Não seguimos tendência. Trabalhamos com matéria e equilíbrio.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" class="py-32 px-6 md:px-20 bg-zinc-950 text-white">
+
+    <h2 class="text-4xl mb-16 uppercase tracking-[0.3em] text-center">
+      Processo
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+      <div>
+        <img src="processo material.jpeg" class="w-full h-80 object-cover mb-4">
+        <p class="text-lg">
+          Não criamos peças finais.<br>
+          Criamos pontos de partida.
+        </p>
+      </div>
+
+      <div>
+        <img src="processo material1.jpeg" class="w-full h-80 object-cover mb-4">
+        <p class="text-lg">
+          A forma questiona.<br>
+          O material resiste.
+        </p>
+      </div>
+
+      <div>
+        <img src="processo desfocado.jpeg" class="w-full h-80 object-cover mb-4">
+        <p class="text-lg">
+          Aqui, perfeição é morte.<br>
+          Evolução é vida.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIMENTOS -->
+  <section id="experimentos" class="py-32 px-6 md:px-20 bg-black text-white">
+
+    <h2 class="text-4xl mb-16 uppercase tracking-[0.3em] text-center">
+      Experimentos
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+      <div class="bg-zinc-900 p-4">
+        <img src="anel lança.jpeg" class="w-full h-72 object-cover mb-4">
+        <p class="tracking-[0.2em]">LOTE 01</p>
+      </div>
+
+      <div class="bg-zinc-900 p-4">
+        <img src="anel trabalhado em cima da pedra preta.jpeg" class="w-full h-72 object-cover mb-4">
+        <p class="tracking-[0.2em]">LOTE 02</p>
+      </div>
+
+      <div class="bg-zinc-900 p-4">
+        <img src="Argolas no quadrado.jpeg" class="w-full h-72 object-cover mb-4">
+        <p class="tracking-[0.2em]">LOTE 03</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-32 px-6 md:px-20 bg-zinc-950 text-white text-center">
+
+    <h2 class="text-4xl mb-10 uppercase tracking-[0.3em]">
+      Contato
+    </h2>
+
+    <p class="mb-6">
+      Entre em contato para colaborações, projetos e consultas.
+    </p>
+
+    <a href="https://wa.me/351931431125"
+  target="_blank"
+      class="border border-white px-8 py-4 inline-block hover:bg-white hover:text-black transition">
+
+      Conversar no WhatsApp
+
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="w-full px-6 md:px-16 lg:px-24 py-16 border-t border-zinc-900">
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+      <div class="md:col-span-4">
+        <span class="font-mono-brand text-xl font-bold">
+          IZI LABORATORY
+        </span>
+      </div>
+
+      <div class="md:col-span-4">
+        <p class="font-mono-brand text-sm">SEM EXCESSO.</p>
+        <p class="font-mono-brand text-sm">SÓ ESTRUTURA.</p>
+        <p class="font-mono-brand text-xs mt-4 text-zinc-500">
+          Produzido em lotes.
+        </p>
+      </div>
+
+      <div class="md:col-span-4 flex gap-6 md:justify-end">
+
+        <a href="https://instagram.com" target="_blank">
+          <i data-lucide="instagram" style="width:16px;height:16px;color:#555;"></i>
+        </a>
+
+        <a href="mailto:contato@izilaboratory.com">
+          <i data-lucide="mail" style="width:16px;height:16px;color:#555;"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script>
+
+    lucide.createIcons();
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+
+    menuClose.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
+    });
+
+  </script>
+
+</body>
+</html>
